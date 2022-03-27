@@ -56,10 +56,6 @@ struct sockaddr_in client_addr;
 fd_set master_list;
 fd_set watch_list;
 
-vector<struct info> clientList;
-map<string, vector<struct info> > blockList;
-map<string, vector<struct relayInfo> > relayList;
-
 
 void server(int portNumber) {
     port = portNumber;
